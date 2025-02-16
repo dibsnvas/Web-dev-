@@ -39,7 +39,11 @@ input.addEventListener("keyup", e => {
 addButton.addEventListener("click", () => {
     let todo = input.value.trim();
     if (!todo) {
-        return
+        addButton.style.backgroundColor = "red";
+        setTimeout(() => {
+            addButton.style.backgroundColor = "pink"
+        },1000)
+    return
     }
     addTodo(todo);
 });
@@ -57,7 +61,8 @@ function check(todo) {
     if (todo.checked) {
         todoName.classList.add("checked");
         todosJson[todo.id].status = "completed";
-    } else {
+    }
+    else {
         todoName.classList.remove("checked");
         todosJson[todo.id].status = "pending";
     }
