@@ -1,0 +1,9 @@
+{
+    "/assets/tutorials/common": {
+      "target": "https://angular.dev",
+      "secure": false,
+      "changeOrigin": true,
+      "logLevel": "debug"
+    }
+  }
+  
