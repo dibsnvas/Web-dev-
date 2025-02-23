@@ -12,16 +12,15 @@
       </a>
       <nav class="main-nav">
         <ul>
-          <li><a href="#" class="nav-link active">Главная</a></li>
-          <li><a href="#" class="nav-link">Каталог</a></li>
-          <li><a href="#" class="nav-link">Акции</a></li>
-          <li><a href="#" class="nav-link">Поддержка</a></li>
+          <li><a href="#" class="nav-link active">Main</a></li>
+          <li><a href="#" class="nav-link">Catalog</a></li>
+          <li><a href="#" class="nav-link">Sale</a></li>
+          <li><a href="#" class="nav-link">Support</a></li>
         </ul>
       </nav>
     </div>
   </header>
   
-  <!-- Грид товаров -->
   <div class="products-grid">
     <div class="product-card" *ngFor="let product of products">
       <div class="image-gallery">
@@ -38,28 +37,27 @@
       </div>
   
       <button class="kaspi-buy" (click)="openKaspiLink(product.kaspiLink)">
-        Купить на Kaspi.kz
+        Buy on Kaspi.kz
       </button>
 
     <div class="share-buttons">
         <button class="whatsapp" (click)="shareViaWhatsApp(product.kaspiLink)">
-          <i class="fab fa-whatsapp"></i> Поделиться в WhatsApp
+          <i class="fab fa-whatsapp"></i> Share in WhatsApp
         </button>
         <button class="telegram" (click)="shareViaTelegram(product.kaspiLink)">
-          <i class="fab fa-telegram"></i> Поделиться в Telegram
+          <i class="fab fa-telegram"></i> Share on Telegram
         </button>
     </div>
   </div>
   
-  <!-- Футер -->
   <footer>
     <div class="container">
-      <p>&copy; 2025 Kaspi.kz. Все права защищены.</p>
+      <p>&copy; 2025 Kaspi.kz. All rights reserved.</p>
       <nav>
         <ul>
-          <li><a href="#">Политика конфиденциальности</a></li>
-          <li><a href="#">Условия использования</a></li>
-          <li><a href="#">Поддержка</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of use</a></li>
+          <li><a href="#">Support</a></li>
         </ul>
       </nav>
     </div>

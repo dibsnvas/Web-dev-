@@ -134,7 +134,7 @@ export class ProductsComponent {
       kaspiLink: 'https://kaspi.kz/shop/p/apple-airpods-3-with-lightning-charging-case-belyi-106667987/?c=750000000'
     },
   ];
-
+  
   openKaspiLink(link: string) {
     window.open(link, '_blank');
   }
