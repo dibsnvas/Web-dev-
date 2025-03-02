@@ -28,14 +28,12 @@ function showTodos() {
         noContent.style.display = 'none';
     }
 }
-
-input.addEventListener("keyup", e => {
+input.add.EventListener("keyup", (e)=>{
     let todo = input.value.trim();
-    if (!todo || e.key != "Enter") {
-        return;
+    if(todo && e.key === "Enter"){
+        addTodo(todo);
     }
-    addTodo(todo);
-});
+})
 addButton.addEventListener("click", () => {
     let todo = input.value.trim();
     if (!todo) {
