@@ -41,6 +41,7 @@ export class ProductListComponent {
   onProductRemove(id: number) {
     this.products = this.products.filter((product) => product.id !== id);
   }
-
-
+  sortByLikes(){
+    this.products.sort((a, b) => a.likes - b.likes);
+  }
 }
