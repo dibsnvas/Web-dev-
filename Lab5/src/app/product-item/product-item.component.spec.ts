@@ -11,7 +11,7 @@ describe('ProductItemComponent', () => {
       imports: [ProductItemComponent]
     })
     .compileComponents();
-    
+
     fixture = TestBed.createComponent(ProductItemComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
